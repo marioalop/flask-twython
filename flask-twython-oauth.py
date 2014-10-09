@@ -24,7 +24,7 @@ def send_token():
 	OAUTH_TOKEN = auth['oauth_token']
 	OAUTH_TOKEN_SECRET = auth['oauth_token_secret']
 	redirect_url= auth['auth_url']
-	#this is twitter's url for authentication
+
 	return redirect(redirect_url)	
 
 @app.route("/verify")
