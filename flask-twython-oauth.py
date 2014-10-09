@@ -35,7 +35,7 @@ def get_verification():
 	final_step = twitter.get_authorized_tokens(request.args['oauth_verifier'])
 	OAUTH_TOKEN2 = final_step['oauth_token']
 	OAUTH_TOKEN_SECRET2 = final_step['oauth_token_secret']
-	return 'OK! OAUTH TOKEN:' + OAUTH_TOKEN2 +'\n OAUTH TOKEN SECRET: '+ OAUTH_TOKEN_SECRET2
+	return 'OK!</br> OAUTH TOKEN:' + OAUTH_TOKEN2 +'</br> OAUTH TOKEN SECRET: '+ OAUTH_TOKEN_SECRET2
 
 if __name__ == "__main__":
 	app.debug = True
