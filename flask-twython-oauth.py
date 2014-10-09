@@ -24,7 +24,6 @@ def send_token():
 	OAUTH_TOKEN = auth['oauth_token']
 	OAUTH_TOKEN_SECRET = auth['oauth_token_secret']
 	redirect_url= auth['auth_url']
-
 	return redirect(redirect_url)	
 
 @app.route("/verify")
